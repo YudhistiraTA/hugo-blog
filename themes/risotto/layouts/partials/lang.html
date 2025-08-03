@@ -1,0 +1,14 @@
+<p>
+    {{ $siteLanguages := .Site.Languages }}
+    {{ $pageLang := .Page.Lang }}
+    
+    {{ $currentPage := . }}
+    {{ $pageName := "" }}
+    {{ range .Site.Menus.main }}
+      {{ if eq ($currentPage.Permalink) (.URL | absLangURL) }}
+        {{ $pageName = .Name }}
+      {{ end }}
+    {{ end }}
+    
+</p>
+<br /><br />
