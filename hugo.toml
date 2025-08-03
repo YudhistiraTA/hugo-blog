@@ -1,4 +1,4 @@
-baseURL = "https://journal.tribuana.dev"
+baseURL = "https://blog.tribuana.dev"
 theme = "risotto"
 title = "tribuana.dev"
 author = "Yudhistira Tribuana"
